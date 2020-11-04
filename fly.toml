@@ -38,6 +38,6 @@ protocol      = "tcp"
     interval = 10000
     timeout  = 2000
 
-[mounts]
+[[mounts]]
 source="data"
 destination="/data"

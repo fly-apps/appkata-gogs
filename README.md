@@ -39,7 +39,7 @@ This generates a `fly.toml` file with the basic components for configuring our g
 app = "appkata-gogs"
 
 [build]
-  image = "gogs/gogs"
+image = "gogs/gogs"
 
 [[services]]
 internal_port = 3000
@@ -95,10 +95,10 @@ fly volumes create data --region lhr
 Created at: 04 Nov 20 09:45 UTC
 ```
 
-The gogs image expects it see its data volume mounted on /data. To do that, it's back to `fly.toml` to add a `mounts` section for our new volume:
+The Gogs image expects to see its data volume mounted on /data. To do that, it's back to `fly.toml` to add a `mounts` section for our new volume:
 
 ```toml
-[mounts]
+[[mounts]]
 source="data"
 destination="/data"
 ```
@@ -150,11 +150,11 @@ The first stop on the install screen for Gogs is the database settings. As menti
 
 Scroll down and you'll come the application settings. We'll want to change the domain to the Fly domain (or your custom domain name). You'll also want to change the ssh port to the one we set in the fly.toml services (10022). The HTTP port doesn't need to change but the application URL should change to the same domain as the application URL and there's no need to set a port in the URL.
 
-![](images/appsettings.png)
+![App Settings](images/appsettings.png)
 
 Finally, make sure to create your admin account otherwise anyone logging in first to the server will get access and thats not good.
 
-![](images/adminsettings.png)
+![Admin Settings](images/adminsettings.png)
 
 Click to install Gogs and it'll be set up with this configuration. You can now go back to the front page - run `fly open` if you can't remember the URL - and log in. You now have your own Git repository, issues tracker and more. 
 
