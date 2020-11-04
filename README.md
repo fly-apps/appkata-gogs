@@ -1,5 +1,7 @@
 # appkata-gogs 
 
+## Rationale
+
 **Appkata**: The application fighting style - and a series of application-centric examples for Fly.io.
 
 The fundamental tool of modern development is a version control system, most often Git. Let's get some Git on Fly. If we just skip past creating a bare Git server because that's no fun, we find Gogs. Gogs bills itself as "a painless self-hosted Git service" and comes ready-packed as an easier to install, and complete Git service, including a web front end for issues and pull requests. 
