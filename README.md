@@ -162,3 +162,6 @@ Click to install Gogs and it'll be set up with this configuration. You can now g
 
 * Once set up, the configuration is effectively frozen - remember this when setting up. The clear the data and configuration, `fly suspend` the app, destroy the existing volume and create a new similarly named volume, then `fly resume` the app.
 
+## Discuss
+
+* You can discuss this example on the [community.fly.io](https://community.fly.io/t/gogs-standalone-git-service-as-a-fly-example/358) topic.
