@@ -1,5 +1,9 @@
 # appkata-gogs 
 
+Deploying Gogs using Fly.
+
+<!---- cut here --->
+
 ## Rationale
 
 **Appkata**: The application fighting style - and a series of application-centric examples for Fly.io.
