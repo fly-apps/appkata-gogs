@@ -152,7 +152,7 @@ If you have a custom domain you want to use for your Gogs server, now is the tim
 
 The first stop on the install screen for Gogs is the database settings. As mentioned at the start, we want to set this to SQLlite3, which is nicely self-contained. We'll also want to make sure that the path is `/data/gogs.db` (an absolute path, not a relative one).
 
-![Database Settings]https://raw.githubusercontent.com/fly-examples/appkata-gogs/main/images//dbsettings.png)
+![Database Settings](https://raw.githubusercontent.com/fly-examples/appkata-gogs/main/images//dbsettings.png)
 
 Scroll down and you'll come the application settings. We'll want to change the domain to the Fly domain (or your custom domain name). You'll also want to change the ssh port to the one we set in the fly.toml services (10022). The HTTP port doesn't need to change but the application URL should change to the same domain as the application URL and there's no need to set a port in the URL.
 
