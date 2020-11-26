@@ -2,6 +2,8 @@
 
 Deploying Gogs using Fly.
 
+[Read this guide on Fly.](https://fly.io/docs/app-guides/git-gogs-server/)
+
 <!---- cut here --->
 
 ## Rationale
